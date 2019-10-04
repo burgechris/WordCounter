@@ -17,12 +17,20 @@ namespace Wordcounter.Test
       Assert.AreEqual(output[0], newWordCounter.Phrase[0]);
     }
     [TestMethod]
-    public void RepeatChecker_WordAppearsOnce_The()
+    public void RepeatChecker_WordAppearsOnce_True()
     {
       string word = "walk";
       string phrase = "walk the dog";
       WordCounter newWordCounter = new WordCounter(word, phrase);
       Assert.AreEqual(1, newWordCounter.RepeatChecker());
+    }
+    [TestMethod]
+    public void RepeatChecker_ChecksForOnlyExactMatch_True()
+    {
+      string word = "cat";
+      string phrase = "walk the dog to the cathedral";
+      WordCounter newWordCounter = new WordCounter(word, phrase);
+      Assert.AreEqual(0, newWordCounter.RepeatChecker());
     }
   }
 }
