@@ -5,11 +5,15 @@ using Wordcounter.Models;
 namespace Wordcounter.Test
 {
   [TestClass]
+  public class RepeatCounterTests
   {
-
-  }
-  [TestMethod]
-  {
-    
+    [TestMethod]
+    public void ToWordArray_PhraseToWords_True()
+    {
+      string phrase = "walk the dog";
+      string[] output = {"walk", "the", "dog"};
+      StrConverter newConverter = new StrConverter(phrase);
+      Assert.AreEqual(output, newConverter.Phrase);
+    }
   }
 }
