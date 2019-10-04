@@ -16,7 +16,7 @@ namespace Wordcounter.Models
     public int RepeatChecker()
     {
       int counter = 0;
-      char[] trimChars = {',', '.', '?', '!'};
+      char[] trimChars = {',', '.', '?', '!', '/', '@', ';', ':'};
       for(int i = 0; i < Phrase.Length; i++)
       {
         if(Phrase[i].TrimEnd(trimChars) == Word)
