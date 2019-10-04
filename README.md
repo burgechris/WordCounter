@@ -4,6 +4,10 @@
 
 #### By _**Christopher Burge**_
 
+## Description
+
+_This console application is for a word counter. A user is prompted for a sentence or phrase, as well as a word. The user is then returned the number of times that word is used in the sentence. The application accounts for puncutation, but it does not account for a plural version of that word._
+
 ## Specifications
 
 | Behavior | Input | Output |
@@ -18,7 +22,7 @@
 
 ## Setup/Installation Requirements
 
-* _Clone this repository and navigate to the "hangman" project directory_
+* _Clone this repository using this link: https://github.com/burgechris/WordCounter.git_
 * _Navigate to "WordCounter"_
 * _Run the command "dotnet restore"_
 * _Run the command "dotnet run"_
