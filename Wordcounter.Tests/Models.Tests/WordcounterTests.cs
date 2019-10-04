@@ -40,5 +40,13 @@ namespace Wordcounter.Test
       WordCounter newWordCounter = new WordCounter(word, phrase);
       Assert.AreEqual(2, newWordCounter.RepeatChecker());
     }
+    [TestMethod]
+    public void RepeatChecker_CounterIgnoresPunctuation_True()
+    {
+      string word = "dog";
+      string phrase = "Take the dog to play with another dog.";
+      WordCounter newWordCounter = new WordCounter(word, phrase);
+      Assert.AreEqual(2, newWordCounter.RepeatChecker());
+    }
   }
 }
