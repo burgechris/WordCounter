@@ -8,7 +8,7 @@ namespace Wordcounter
         static void Main()
         {
             Console.WriteLine("Hey There!");
-            Console.WriteLine("Check to see how many times a word is repeated in a phrase.")
+            Console.WriteLine("Check to see how many times a word is repeated in a phrase.");
             Console.WriteLine("Please enter a phrase.");
             string phrase = Console.ReadLine().ToLower();
             Console.WriteLine("Please enter a word.");
