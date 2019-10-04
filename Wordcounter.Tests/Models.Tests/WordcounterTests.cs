@@ -13,7 +13,7 @@ namespace Wordcounter.Test
       string phrase = "walk the dog";
       string[] output = {"walk", "the", "dog"};
       StrConverter newConverter = new StrConverter(phrase);
-      Assert.AreEqual(output, newConverter.Phrase);
+      Assert.AreEqual(output[0], newConverter.Phrase[0]);
     }
   }
 }
