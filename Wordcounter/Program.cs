@@ -7,6 +7,8 @@ namespace Wordcounter
     {
         static void Main()
         {
+            Console.BackgroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Hey There!");
             Console.WriteLine("Check to see how many times a word is repeated in a phrase.");
             Console.WriteLine("Please enter a phrase.");
@@ -16,6 +18,7 @@ namespace Wordcounter
             WordCounter newWordCounter = new WordCounter(word, phrase);
             int count = newWordCounter.RepeatChecker();
             Console.WriteLine("Your word, " + word + ", appears " + count + " times.");
+            Console.ResetColor();
         }
     }
 }
