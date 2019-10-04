@@ -8,7 +8,9 @@
 
 | Behavior | Input | Output |
 | -------- | :---------: | :---------: |
-| | | |
+| The program will count the times a word appears in a sentence | 'the' and 'The man went downstairs.' | 'The word 'the' is used '1' time |
+| The program will not count partial matches | 'the' and 'The man went down there.' | The word 'the' is used '1' time |
+| The program will look for multiple matches | ' the' and 'The man walked down the street.' | The word 'the' is used '2' times |
 
 
 ## Setup/Installation Requirements
