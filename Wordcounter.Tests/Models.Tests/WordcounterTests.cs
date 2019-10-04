@@ -13,8 +13,16 @@ namespace Wordcounter.Test
       string word = "walk";
       string phrase = "walk the dog";
       string[] output = {"walk", "the", "dog"};
-      RepeatCounter newCounter = new RepeatCounter(word, phrase);
-      Assert.AreEqual(output[0], newCounter.Phrase[0]);
+      WordCounter newWordCounter = new WordCounter(word, phrase);
+      Assert.AreEqual(output[0], newWordCounter.Phrase[0]);
+    }
+    [TestMethod]
+    public void RepeatChecker_WordAppearsOnce_The()
+    {
+      string word = "walk";
+      string phrase = "walk the dog";
+      WordCounter newWordCounter = new WordCounter(word, phrase);
+      Assert.AreEqual(1, newWordCounter.RepeatChecker());
     }
   }
 }
