@@ -8,9 +8,11 @@
 
 | Behavior | Input | Output |
 | -------- | :---------: | :---------: |
-| The program will count the times a word appears in a sentence | 'the' and 'The man went downstairs.' | 'The word 'the' is used '1' time |
-| The program will not count partial matches | 'the' and 'The man went down there.' | The word 'the' is used '1' time |
-| The program will look for multiple matches | ' the' and 'The man walked down the street.' | The word 'the' is used '2' times |
+| The program will split a phrase into an array of words | 'walk the dog' | 'walk', 'the', 'dog' |
+**This is the simplest possible behavior because it sets the sentence up for being able to iterate through each individual word**
+| The program will count the times a word appears in a sentence | 'the' and 'walk the dog' | 'The word 'the' is used '1' time |
+| The program will not count partial matches | 'the' and 'The dog went down there.' | The word 'the' is used '1' time |
+| The program will look for multiple matches | ' the' and 'walk the dog down the street.' | The word 'the' is used '2' times |
 
 
 ## Setup/Installation Requirements
